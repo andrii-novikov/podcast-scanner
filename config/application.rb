@@ -12,6 +12,10 @@ require "action_view/railtie"
 # require "action_cable/engine"
 # require "sprockets/railtie"
 require "rails/test_unit/railtie"
+require 'elasticsearch/persistence/model'
+require 'net/http'
+require 'faraday_middleware'
+require 'sanitize'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
